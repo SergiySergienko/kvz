@@ -1,0 +1,25 @@
+:technology:
+  :SpyTechnology:
+    :list_order_id: 1
+  :ComputerTechnology:
+    :list_order_id: 2
+  :WeaponTechnology:
+    :list_order_id: 3
+  :ShieldTechnology:
+    :list_order_id: 4
+  :ArmorTechnology:
+    :list_order_id: 5
+  :EnergyTechnology:
+    :list_order_id: 6
+  :HyperTechnology:
+    :list_order_id: 7
+  :ChimicEngineTechnology:
+    :list_order_id: 8
+  :IonEngineTechnology:
+    :list_order_id: 9
+  :HyperEngineTechnology:
+    :list_order_id: 10
+  :LaserTechnology:
+    :list_order_id: 11
+  :IonTechnology:
+    :list_order_id: 12

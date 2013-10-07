@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Kvazars</title>
+  <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
+  <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+<div class="notofication-area">
+<%= NotificationCollector.get_errors %>
+<%= NotificationCollector.get_infos %>
+</div>
+
+
+<%= link_to("Main", root_path) %><br/>
+<%= link_to("Planets", game_planets_index_path) %><br/>
+<%= link_to("Technologies", game_technology_list_path) %>
+<br /><hr/>
+<%= yield %>
+
+</body>
+</html>

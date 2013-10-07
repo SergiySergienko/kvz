@@ -1,0 +1,17 @@
+ru:
+  notification_collector:
+    error: Ошибка
+    info: Внимание
+    building_listener:
+      title: Постройщик
+      errors:
+        cant_proceed: Не могу построить здание
+        building_required: "Необходимо построить/улучшить здание %{title} до %{level} уровня."
+        technology_required: "Необходимо изучить/улучшить технологию %{title} до %{level} уровня."
+      infos:
+        success: Здание построено
+    test_technology_listener:
+      errors:
+        cant_proceed: Не могу изучить технологию
+      infos:
+        success: Технология изучена

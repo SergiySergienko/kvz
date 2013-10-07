@@ -1,0 +1,16 @@
+:building:
+  :IronMine:
+  :CrystalsMine:
+  :GazMine:
+  :SunStation:
+  :RobotFactory:
+  :Laboratory:
+  :IronStorage:
+  :CrystalsStore:
+  :GazStorage:
+  :AllianceStorage:
+  :Storage:
+  :NuclearReactior:
+    :sub_category: special
+  :NanoFactory:
+    :sub_category: special

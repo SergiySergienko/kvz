@@ -1,0 +1,7 @@
+<% @planets.each do |planet| %>
+  <%= link_to("Planet #{planet.id}", game_planet_show_path(planet)) %>
+  <%= planet.left %><br/>
+  <%= planet.right %><br/>
+  <%= planet.sonar_system %><br/>
+  <%= planet.planet_type %><br/>
+<% end %>

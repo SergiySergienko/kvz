@@ -1,0 +1,8 @@
+
+<% @technologies.each do |tech| %>
+  <%= tech.title %><br/>
+  <%= tech.description %><br/>
+  <%= tech.image_url %><br/>
+  <%= link_to "Extend", game_build_technology_path(technology_type: tech.c_technology_type) %>
+  <hr/>
+<% end %>

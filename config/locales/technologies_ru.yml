@@ -1,0 +1,11 @@
+ru:
+  technology:
+    spy_technology:
+      title: Технология шпионажа
+      description: "asdasd"
+    computer_technology:
+      title: Технология компов
+      description: "asdasd"
+    :energy_technology:
+      title: Энегретическая технология
+      description: "asdasd"

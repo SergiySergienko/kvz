@@ -1,0 +1,8 @@
+
+<% @buildings.each do |building| %>
+  <%= building.title %><br/>
+  <%= building.description %><br/>
+  <%= building.image_url %><br/>
+  <%= link_to "Build", game_build_planet_building_path(planet_id: @planet, building_type: building.c_building_type) %>
+  <hr/>
+<% end %>
