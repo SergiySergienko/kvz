@@ -1,21 +1,14 @@
 class Managers::ShipManager < Managers::Base
-  
-  def self.retrieve_entity_for(entity)
-  	return unless entity
-    if entity.is_a?(User)
-      managed_class.try(:where, user_id: entity).try(:first_or_initialize)
-    elsif entity.is_a?(Planet)
-      managed_class.try(:where, planet_id: entity).try(:first_or_initialize)
-    end	
+  include Managers::Poppulators::ShipManager
+
+  def self.retrieve_entity_for(entity, options={})
+    return unless entity
+    find_or_create_ship_for_planet(entity, options) if entity.is_a?(Planet)
   end
 
-  def self.get_entities_for(entity)
-  	return [] unless entity
- 	if entity.is_a?(User)
-      managed_class.try(:where, user_id: entity)
-    elsif entity.is_a?(Planet)
-      managed_class.try(:where, planet_id: entity)
-    end	
+  def self.get_entities_for(entity, options={})
+    return [] unless entity
+    load_ships_for_planet(entity, options) if entity.is_a?(Planet)
   end
 
   protected

@@ -1,0 +1,9 @@
+
+<% @ships.each do |ship| %>
+  <%= ship.image_url %><br/>
+  <%= ship.title %><br/>
+  <%= ship.description %><br/>
+  <%= ship.requirements %><br/>
+  <%= link_to "Build", game_build_ship_path(planet_id: @planet, ship_type: ship.c_ship_type) %>
+  <hr/>
+<% end %>

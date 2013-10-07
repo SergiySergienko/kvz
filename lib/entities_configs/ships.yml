@@ -1,0 +1,15 @@
+:ship:
+  :SpyShip:
+    :list_order_id: 1
+  :TransportShip:
+    :list_order_id: 2
+  :AttackLightShip:
+    :list_order_id: 3
+  :AttackBoldShip:
+    :list_order_id: 4
+  :ProtectorShip:
+    :list_order_id: 5
+  :MamontShip:
+    :list_order_id: 6
+  :IonShip:
+    :list_order_id: 7

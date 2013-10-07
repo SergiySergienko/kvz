@@ -19,7 +19,13 @@ module Presentable
 
   	def description
     	I18n.translate "#{translate_key}.description"
-  	end	
+  	end
+
+    def requirements
+      result = I18n.translate "#{translate_key}.requirements"
+      return result if result
+      nil
+    end	
 
   	def image_url
     	"/images/#{self.class.name.underscore}/#{send("#{self.class.name.underscore}_type").try(:underscore)}.gif"

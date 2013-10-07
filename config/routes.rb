@@ -20,16 +20,25 @@ Kvazars::Application.routes.draw do
 
   namespace :game do
     
-    get 'planet/:planet_id/buildings' => 'building#list'
+    
+    # Buildins
     get 'building/:planet_id/build/:building_type', to: 'building#build', as: 'build_planet_building'
     get 'building/:planet_id/list', to: 'building#list', as: 'building_list'
     
+    # Technologies
     get 'technology/:technology_type/build', to: 'technology#build', as: 'build_technology'
     get 'technology/list', to: 'technology#list', as: 'technology_list'
+    
+    # Planets
+    get 'planet/:planet_id/buildings' => 'building#list'
     get 'planet/index', to: 'planet#index', as: 'planets_index'
     get 'planet/:planet_id/show', to: 'planet#show', as: 'planet_show'
 
-    resources :profile
+    # Ships
+    get 'ship/:planet_id/list', to: 'ship#list', as: 'ship_list'
+    get 'ship/:planet_id/build/:ship_type', to: 'ship#build', as: 'build_ship'
+
+    # resources :profile
     # resources :planet do
       
     #   get 'show'
@@ -38,9 +47,9 @@ Kvazars::Application.routes.draw do
     #   get 'index'
     #   get 'list'
     # end
-    resources :technology do
-      get 'index'
-    end
+    # resources :technology do
+    #   get 'index'
+    # end
   end
   
 

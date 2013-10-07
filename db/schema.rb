@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20131002171343) do
+ActiveRecord::Schema.define(version: 20131007213612) do
 
   create_table "buildings", force: true do |t|
     t.integer  "user_id"
@@ -41,8 +41,10 @@ ActiveRecord::Schema.define(version: 20131002171343) do
     t.string   "state"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.integer  "planet_id"
   end
 
+  add_index "ships", ["planet_id"], name: "index_ships_on_planet_id", using: :btree
   add_index "ships", ["ship_type"], name: "index_ships_on_ship_type", using: :btree
   add_index "ships", ["user_id"], name: "index_ships_on_user_id", using: :btree
 

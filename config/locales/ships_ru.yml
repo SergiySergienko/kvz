@@ -1,0 +1,23 @@
+ru:
+  ship:
+    spy_ship:
+      title: Маленький шпион
+      description: "Шпионит и т.д."
+      requirements: ""
+    transport_ship:
+      title: Транспортник
+      description: "Транспортник"
+      requirements: ""
+    attack_light_ship:
+      title: Лёгкий истребитель
+      description: "Легко истребляет"
+      requirements: "Верфь 999 уровня и миллиарды ресурсов"
+    attack_bold_ship:
+      title: Жирный эсминец
+      description: "Мочит всё"
+      requirements: "Верфь 999 уровня и миллиарды ресурсов"
+    protector_ship:
+      title: Собака защищака
+      description: "Защищает"
+      requirements: "Верфь 999 уровня и миллиарды ресурсов"
+    
